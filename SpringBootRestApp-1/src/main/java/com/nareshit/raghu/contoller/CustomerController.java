@@ -30,4 +30,9 @@ public class CustomerController {
 	public List<Customer> getAllCustomer() {
 		return service.getAllCustomer();
 	}
+	
+	@GetMapping("/show")
+	public String showMsg() {
+		return "show wish message";
+	}
 }
